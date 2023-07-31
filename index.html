@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>NeuroDetroy</title>
+</head>
+
+<body >
+    <header>
+        <nav>
+            <li style="list-style: none;"><a class="navInfo" href="#informacion">Información</a></li>
+            <li style="list-style: none;"><a class="navInfo" href="#formulario">Suscripción</a></li>
+            <li style="list-style: none;"><a class="navInfo" href="#redes">Redes</a></li>
+        </nav>
+    </header>
+
+
+    <section class="pagina1">
+        <div class="pagina1__Titulo">
+            <img class="pagina1__Titulo--neuro" src="Titulo.png" alt="">
+        </div>
+    
+        <div class="pagina1__CuentaAtras">
+            <h1 id="contador" class="pagina1__CuentaAtras--contador">00:00:00</h1>
+        </div>
+    </section>
+
+    <section class="pagina2" id="informacion">
+
+        <div class="pagina2__Imagen" data-aos="zoom-in">
+            <img id="imagenLibro" src="librofinal.png" alt="">   
+        </div>
+    
+        <article>
+            <p class="pagina2__Explicacion">
+                Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra. 
+            </p>
+        </article>
+    </section>
+    
+
+    <div id="formulario"></div>
+    
+    <div class="pagina3">
+        <section class="pagina3__Subs">
+            <form>
+                <ul>
+                    <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre">
+                    
+                    <input type="number" id="edad" name="usuario_edad" placeholder="Edad">
+                    
+                    <input type="email" id="mail" name="usuario_mail" placeholder="Correo Electronico">
+                    
+                    <button type="button">Enviar</button>
+                    </ul>
+            </form>
+        
+            <div class="pagina3__Imagen3" data-aos="zoom-in" >
+                <img id="imgForm" src="Rectangle 32.svg" alt="">
+        
+            </div>
+
+        </section>
+    </div>
+
+    <div class="pagina4" id="redes">
+        <section class="pagina4__Redes" >
+
+            <a href="https://www.facebook.com/" target="_blank" class="pagina4__Redes__iconos">
+                <img data-aos="flip-left" src="bxl-facebook (1) 1.svg" alt="Facebook" />
+            </a>
+        
+            <a href="https://www.instagram.com/" target="_blank" class="pagina4__Redes__iconos">
+                <img data-aos="flip-left" src="bxl-instagram (1) 1.svg" alt="Instagram" />
+            </a>
+        
+            <a href="https://twitter.com/" target="_blank" class="pagina4__Redes__iconos">
+                <img data-aos="flip-left" src="bxl-twitter (1) 1.svg" alt="Twitter" />
+            </a>
+        
+            <a href="https://www.twitch.tv/" target="_blank" class="pagina4__Redes__iconos">
+                <img data-aos="flip-left" src="twitch.svg" alt="Twitch" />  
+            </a>     
+        </section>
+
+        <footer>
+            <p class="derechos">
+                Yorem ipsum dolor sit amet,<br>consectetur adiscing elit. <br>Etiam eu turpis molestie.
+            </p>
+
+            
+            <div class="logo">
+                <img class="logo__ImagenFinal" data-aos="zoom-out-up"src="Titulo.png" alt="">
+                <img  class="logo__LogoC" data-aos="zoom-out-up" src="bx-copyright 1.svg" alt="">
+            </div>
+
+            <div clas="terminosPoliticas">
+                <p class="terminosPoliticas__Terminos">
+                    Terminos de uso
+                </p>
+
+                <p class="terminosPoliticas__Politicas">
+                    Politicas de privacidad
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <script src="javascript.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

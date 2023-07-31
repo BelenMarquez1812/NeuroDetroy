@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #52D1F2;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #52d2f27e;
+    border-radius: 10px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(241.89deg, rgba(0, 0, 0, 0.567) 14.95%, rgba(22, 21, 55, 0.9) 87.83%);
+    z-index: -1;
+}
+
+.pagina1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;     
+    position: fixed;
+}
+
+ul li{
+    display: inline;
+    list-style: none;
+
+} 
+
+.navInfo {
+    font-family: 'Codystar';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #D4F1F9;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navInfo:hover {
+    color: #E5B2EB;
+    text-shadow: 0px 0px 5px #E5B2EB, 0px 0px 20px #E5B2EB, 0px 0px 30px #E5B2EB, 0px 0px 50px #E5B2EB ;
+}
+
+.pagina1__Titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.pagina1__Titulo--neuro {
+    max-width: 100%;    
+}
+
+.pagina1__CuentaAtras {
+
+    font-family: 'Raleway Dots';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 145px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 5px #ffffff, 0px 0px 20px #ffffff, 0px 0px 30px #ffffff, 0px 0px 50px #ffffff ;
+}
+
+.pagina2 { 
+    display:flex;
+    flex-direction: row; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height:100vh; 
+    background: #1C1F39;
+    align-items: center; 
+}
+
+#imagenLibro {    
+    max-width: 100%;
+}
+
+article {    
+
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: justify;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    overflow: auto;
+}
+
+.pagina2__Explicacion {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 40px;    
+    color: rgba(255, 255, 255, 0.71);   
+}
+
+
+.pagina3 {
+    height:100vh; 
+}
+
+.pagina3__Subs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1C1F39;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 150px;
+    align-items: center;
+    -webkit-box-shadow:0px 0px 10px 4px rgba(82,210,242,0.9);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(82,210,242,0.9);
+    box-shadow: 0px 0px 10px 4px rgba(82,210,242,0.9);
+}
+
+form { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%; 
+}
+
+ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+input {   
+    margin-bottom: 10%;
+    background-color: #ffffff00;
+    width: 363px;
+    height: 60px;
+    border: 3px solid #EDAEEE;
+    filter: drop-shadow(0px 0px 4px rgba(237, 174, 238, 0.25));
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px #EDAEEE, 0px 0px 10px #EDAEEE;
+}
+
+input::placeholder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: #ffffffc5;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+input[type="text"] {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffffc5;
+}
+
+input[type="number"] {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffffc5;
+    text-align: center;
+}
+
+input[type="email"] {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffffc5;
+}
+  
+input[type="text"]:focus {
+    border: 4px solid #EDAEEE;
+    box-shadow: 0px 0px 20px #EDAEEE, 0px 0px 10px #EDAEEE;
+}
+
+input[type="number"]:focus {
+    border: 4px solid #EDAEEE;
+    box-shadow: 0px 0px 20px #EDAEEE, 0px 0px 10px #EDAEEE;
+    text-align: center;
+}
+
+input[type="email"]:focus {
+    border: 4px solid #EDAEEE;
+    box-shadow: 0px 0px 20px #EDAEEE, 0px 0px 10px #EDAEEE;
+}
+
+button {
+    background-color: #00000000;
+    color: #ffffffc5;
+    Width: 256.94px;
+    Height: 65.84px;
+    border: 3px solid #52D1F2;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+button:hover {
+    color: #52D1F2;
+    text-shadow: 0px 0px 5px #52D1F2, 0px 0px 20px #52D1F2, 0px 0px 30px #52D1F2, 0px 0px 50px #52D1F2 ;
+    box-shadow: 0px 0px 5px #52D1F2, 0px 0px 10px #52D1F2;
+}
+
+.pagina3__Imagen3 {
+    opacity: 0.8;  object-fit: cover;
+}
+
+#imgForm {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pagina4 {
+    height:100vh; 
+}
+
+.pagina4__Redes {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1C1F39;
+    padding-top: 330px;
+    padding-bottom: 300px;
+}
+
+.pagina4__Redes__iconos:hover {
+    opacity: 0.3;
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+
+.derechos {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.55);    
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    align-items: center;
+}
+
+.logo__ImagenFinal {
+    max-width: 30%;
+    max-height: 60%;
+}
+
+.logo__LogoC {
+    align-items: center;
+    max-width: 2%;   
+}
+
+.terminosPoliticas {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+.terminosPoliticas__Terminos {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.63);
+
+
+}
+
+.terminosPoliticas__Politicas {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.63);
+    align-items: center;
+}
+
+
+/* Responsive*/
+
+
+@media screen and (max-width:740px) {
+
+    .navInfo {
+        font-size: 3.9vw;
+    }
+
+    .pagina1__CuentaAtras {
+        font-size: 40px;  
+    }
+
+    .pagina2 { 
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+    #imagenLibro {    
+        max-width: 80%;
+        padding-bottom: 10%;
+    }
+    
+    article {    
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: justify;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+      
+    }
+    
+    .pagina2__Explicacion {
+        padding-bottom: 10%;
+        font-size: 30px;    
+    }  
+
+
+
+    .pagina3 {
+        height:100vh; 
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+   }
+
+
+
+    .pagina3__Subs {    
+        flex-direction: column;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        box-shadow: none;
+    }
+    
+    
+    form { 
+        margin-top: 13%;
+        margin-bottom: 10%;
+        margin-left: 0%;
+        margin-right: 0%; 
+    }
+
+    #imgForm {
+        max-width: 0%;
+        max-height: 0%;
+    }
+
+    input {   
+        
+        width: 300px;
+        height: 60px;
+        margin-bottom: 15%;
+    }
+
+
+    input::placeholder{
+
+        font-size: 25px;
+    }
+
+    button {
+
+        Width: 200px;
+        Height: 55px;
+        font-size: 25px;
+    }
+    
+    .pagina4__Redes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: space-around;
+        background-color: #1C1F39;
+        padding-top: 35%;
+        padding-bottom: 30%;
+    }
+
+    .pagina4__Redes__iconos{
+        max-width: 85%;
+
+        margin-bottom: 15%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .derechos {
+
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 3%;
+    }
+    
+    
+    .logo__ImagenFinal {
+        max-width: 40%;
+        max-height: 60%;
+        margin-bottom: 3%;
+    }
+    
+    .logo__LogoC {
+        align-items: center;
+        max-width: 4%;   
+        margin-bottom: 3%;
+    }
+    
+    .terminosPoliticas {
+        display: flex;
+        justify-content: right;   
+ 
+    }
+    
+    .terminosPoliticas__Terminos {
+
+    text-align: right;
+    
+    
+    }
+    
+    .terminosPoliticas__Politicas {
+       text-align: right;
+    }
+
+}
+
+
+@media screen and (max-width:1500px) {
+    .pagina2__Explicacion {
+        padding-bottom: 10%;
+        font-size: 25px;     
+    }  
+
+    .pagina3 {
+        height:100vh; 
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+   }
+
+    .pagina3__Subs {    
+        flex-direction: column;
+    }
+
+    form { 
+        margin-top: 17%;
+        margin-bottom: 13%;
+        margin-left: 0%;
+        margin-right: 0%; 
+    }
+
+    #imgForm {
+        max-width: 0%;
+        max-height: 0%;
+    }
+
+    input {   
+        width: 280px;
+        margin-bottom: 14%;
+    }
+
+
+    button {
+        Width: 180px;
+    }
+
+}
+
+
+
+
+
+
